@@ -1,0 +1,73 @@
+/* content.css - Injected styles on YouTube page */
+
+#ytchat-toggle-btn {
+  position: fixed;
+  right: 18px;
+  bottom: 28px;
+  z-index: 999998;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  background: rgba(18, 20, 26, 0.92);
+  color: #f1f5f9;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 9999px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.45), 0 0 0 1px rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  cursor: pointer;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  user-select: none;
+}
+
+#ytchat-toggle-btn:hover {
+  transform: translateY(-2px) scale(1.03);
+  background: rgba(26, 30, 40, 0.98);
+  border-color: rgba(99, 102, 241, 0.5);
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.6), 0 0 16px rgba(99, 102, 241, 0.3);
+}
+
+#ytchat-toggle-btn svg {
+  width: 18px;
+  height: 18px;
+  fill: #ef4444;
+  transition: transform 0.2s ease;
+}
+
+#ytchat-toggle-btn:hover svg {
+  transform: scale(1.1);
+}
+
+#ytchat-toggle-btn .ytchat-badge {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: #10b981;
+  box-shadow: 0 0 8px #10b981;
+}
+
+#ytchat-sidebar-frame {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 420px;
+  max-width: 90vw;
+  height: 100vh;
+  border: none;
+  z-index: 999999;
+  background: #0d0f12;
+  box-shadow: -8px 0 32px rgba(0, 0, 0, 0.7);
+  border-left: 1px solid rgba(255, 255, 255, 0.08);
+  transform: translateX(100%);
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  color-scheme: dark;
+}
+
+#ytchat-sidebar-frame.ytchat-open {
+  transform: translateX(0);
+}
+
